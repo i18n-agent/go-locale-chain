@@ -421,6 +421,16 @@ It still works -- it returns the messages for the requested locale with no fallb
 **Can I reset the configuration?**
 Yes. Call `localechain.Reset()` to clear the global resolver. You can reconfigure at any time with `Configure()` or its variants.
 
+## Example
+
+A minimal example app is included in the [`example/`](./example/) directory. It demonstrates the locale chain resolving three keys for `pt-BR`, showing fallback from `pt-BR -> pt -> en`.
+
+```bash
+cd example && go run main.go
+```
+
+See [`example/README.md`](./example/README.md) for full setup instructions.
+
 ## Contributing
 
 - Open issues for bugs or feature requests.
